@@ -10,6 +10,11 @@ lite = ["dep:rfd"]
 
 [dependencies]
 rfd = { version = "0.17.2",  optional = true }
-eframe = {version = "0.33.3", features = ["default"]}
-egui_extras = {version = "0.33.3", features = ["default", "image", "webp", "gif", "file"] }
+eframe = { path = "./egui/crates/eframe" }
+egui_extras = { path = "./egui/crates/egui_extras", features = ["default", "image", "webp", "gif", "file"] }
 image = { version = "0.25", features = ["png", "gif"] }
+
+
+#eframe = {version = "0.33.3", features = ["default"]}
+#egui = { path = "./egui/crates/egui" }
+#egui_extras = {version = "0.33.3", features = ["default", "image", "webp", "gif", "file"] }
