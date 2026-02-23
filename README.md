@@ -1,15 +1,14 @@
-# AnimaTux
-![dance](https://github.com/user-attachments/assets/d9f4344f-c129-4172-8d84-9bef55e7fe35)
+# AnimaMac
 
-This is my recreation of Animaengine in Rust for linux, though I don't see why you couldn't use it on Windows.
-
+This is a fork of [AnimaTux](https://github.com/sethblocks/AnimaTux), renamed to AnimaMac. It targets macOS; behavior on other systems is unverified.
 ## Features
- - play animations or show images on your desktop or whatever app you are using
- - Supports original Animaengine workshop items (requires steamcmd and ffmpeg on your system)
- - Works on most desktops (Wayland and X11)
- - Framerate slider for animations that need speed up or slowed down
+- Play animations or show images on your desktop or whatever app you are using
+- Scale slider for image size
+- Character library system for multiple characters
+- If `ffmpeg` and `img2webp` are installed, selecting an APNG in the file picker will auto-convert to WebP
+- If `steamcmd` and `ffmpeg` are installed, original AnimaEngine workshop items downloads are available
+- Framerate slider for animations that need speed up or slowed down
 
-## Wayland
-Wayland doesn't allow apps to show above others, however the user can normally set this by right clicking the title bar and selecting Always On Top in KDE or GNOME (and likely others)
-
-If you use X11 you *should* be okay by default.
+## Dependencies
+### Build
+- Rust toolchain (stable) and `cargo`
