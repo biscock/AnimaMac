@@ -1,5 +1,5 @@
 # AnimaMac
-
+https://github.com/user-attachments/assets/05f4ff94-03b7-45b1-ba9f-9516f48564d1
 This is a fork of [AnimaTux](https://github.com/sethblocks/AnimaTux), renamed to AnimaMac. It targets macOS; behavior on other systems is unverified.
 ## Features
 - Play animations or show images on your desktop or whatever app you are using
