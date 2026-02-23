@@ -21,4 +21,4 @@ This is a fork of [AnimaTux](https://github.com/sethblocks/AnimaTux). It targets
 - ESC when animation window is focused - animation settings
 
 ## Build
-- Rust toolchain (stable) and `cargo`
+- Rust toolchain (stable)
