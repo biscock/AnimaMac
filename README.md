@@ -1,7 +1,7 @@
 # AnimaMac
 
 
-https://github.com/user-attachments/assets/d46a84b4-dfed-4cd8-bfb4-998dc935d111
+https://github.com/user-attachments/assets/5a36a02a-d799-4005-8763-06f2578f9a5d
 
 
 This is a fork of [AnimaTux](https://github.com/sethblocks/AnimaTux). It targets macOS; behavior on other systems is unverified.
@@ -15,6 +15,10 @@ This is a fork of [AnimaTux](https://github.com/sethblocks/AnimaTux). It targets
 - If `ffmpeg` and `img2webp` are installed, selecting an APNG in the file picker will auto-convert to WebP
 - If `steamcmd` and `ffmpeg` are installed, original AnimaEngine workshop items downloads are available
 - Framerate slider for animations that need speed up or slowed down
+
+## Keybinds
+- cmd+M - main window
+- ESC when animation window is focused - animation settings
 
 ## Dependencies
 ### Build
