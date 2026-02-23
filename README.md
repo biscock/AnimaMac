@@ -20,6 +20,5 @@ This is a fork of [AnimaTux](https://github.com/sethblocks/AnimaTux). It targets
 - cmd+M - main window
 - ESC when animation window is focused - animation settings
 
-## Dependencies
-### Build
+## Build
 - Rust toolchain (stable) and `cargo`
