@@ -7,6 +7,20 @@ use std::process::Command;
 pub struct Character {
     pub name: String,
     pub path: String,
+    #[serde(default)]
+    pub enabled: bool,
+    #[serde(default)]
+    pub speed: i64,
+    #[serde(default = "default_scale")]
+    pub scale: f32,
+    #[serde(default)]
+    pub window_pos: Option<[f32; 2]>,
+    #[serde(default)]
+    pub window_size: Option<[f32; 2]>,
+}
+
+fn default_scale() -> f32 {
+    1.0
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
@@ -240,6 +254,11 @@ impl CharacterLibrary {
             self.characters.push(Character {
                 name: name.to_string(),
                 path: path.to_string(),
+                enabled: false,
+                speed: 0,
+                scale: 1.0,
+                window_pos: None,
+                window_size: None,
             });
             self.save();
         }
@@ -248,6 +267,32 @@ impl CharacterLibrary {
     pub fn remove_character(&mut self, index: usize) {
         if index < self.characters.len() {
             self.characters.remove(index);
+            self.save();
+        }
+    }
+
+    pub fn index_by_path(&self, path: &str) -> Option<usize> {
+        self.characters.iter().position(|c| c.path == path)
+    }
+
+    pub fn set_enabled(&mut self, index: usize, enabled: bool) {
+        if let Some(character) = self.characters.get_mut(index) {
+            character.enabled = enabled;
+            self.save();
+        }
+    }
+
+    pub fn update_settings(&mut self, index: usize, speed: i64, scale: f32) {
+        if let Some(character) = self.characters.get_mut(index) {
+            character.speed = speed;
+            character.scale = scale;
+            self.save();
+        }
+    }
+
+    pub fn update_position(&mut self, index: usize, pos: [f32; 2]) {
+        if let Some(character) = self.characters.get_mut(index) {
+            character.window_pos = Some(pos);
             self.save();
         }
     }
