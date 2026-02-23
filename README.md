@@ -8,6 +8,7 @@ This is a fork of [AnimaTux](https://github.com/sethblocks/AnimaTux). It targets
 
 ## Features
 - Play animations or show images on your desktop or whatever app you are using
+- Multiple animations at once
 - Remembers your settings
 - Scale slider for image size
 - Character library system for multiple characters
