@@ -11,7 +11,7 @@ This is a fork of [AnimaTux](https://github.com/sethblocks/AnimaTux). It targets
 - Multiple animations at once
 - Remembers your settings
 - Scale slider for image size
-- Character library system for multiple characters
+- Animation library system
 - If `ffmpeg` and `img2webp` are installed, selecting an APNG in the file picker will auto-convert to WebP
 - If `steamcmd` and `ffmpeg` are installed, original AnimaEngine workshop items downloads are available
 - Framerate slider for animations that need speed up or slowed down
